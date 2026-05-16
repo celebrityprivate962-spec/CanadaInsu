@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Plans - CanadaInsu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="alert-banner">
+        <div class="container">
+            <span class="alert-icon">⚠️</span>
+            <span class="alert-text">Always verify BTC wallet addresses before sending payments.</span>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">CI</div>
+                <span class="logo-text">CanadaInsu</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="plans.html" class="nav-link active">Insurance Plans</a></li>
+                <li><a href="index.html#blog" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="plans.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Select Your Coverage</h1>
+            <p>Professional protection plans tailored to your needs.</p>
+        </div>
+    </section>
+
+    <section class="plans-section">
+        <div class="container">
+            <div class="plans-grid">
+                
+                <!-- Life Insurance -->
+                <div class="plan-card-image">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516733968668-dbdce39c4651?w=600&h=400&fit=crop" alt="Life Insurance">
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Life Insurance</h3>
+                        <p class="plan-desc">Comprehensive life coverage ensuring your family's financial security.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ Coverage up to $1M</li>
+                            <li>✓ Cash value accumulation</li>
+                            <li>✓ No medical exam</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$150</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=life" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Health Insurance -->
+                <div class="plan-card-image">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Health Insurance">
+                        <div class="plan-badge">Best Value</div>
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Health Insurance</h3>
+                        <p class="plan-desc">Complete medical coverage including hospitalization and specialists.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ Full hospitalization</li>
+                            <li>✓ Prescription drugs</li>
+                            <li>✓ Mental health support</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$250</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=health" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Travel Insurance -->
+                <div class="plan-card-image">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop" alt="Travel Insurance">
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Travel Insurance</h3>
+                        <p class="plan-desc">Global coverage for your adventures with emergency medical protection.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ Worldwide emergency</li>
+                            <li>✓ Trip cancellation</li>
+                            <li>✓ Lost baggage</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$75</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=travel" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Critical Illness -->
+                <div class="plan-card-image">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop" alt="Critical Illness">
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Critical Illness</h3>
+                        <p class="plan-desc">Financial protection against serious illnesses with lump-sum payments.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ 25+ illnesses covered</li>
+                            <li>✓ Lump-sum payment</li>
+                            <li>✓ Rehabilitation support</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$200</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=critical" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Business Insurance -->
+                <div class="plan-card-image">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Business Insurance">
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Business Insurance</h3>
+                        <p class="plan-desc">Protect your enterprise with comprehensive commercial coverage.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ General liability</li>
+                            <li>✓ Property protection</li>
+                            <li>✓ Cyber liability</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$500</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=business" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+                <!-- Hantavirus Protection -->
+                <div class="plan-card-image featured-plan">
+                    <div class="plan-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&h=400&fit=crop" alt="Rare Disease">
+                        <div class="plan-badge special">Rare Disease</div>
+                    </div>
+                    <div class="plan-body">
+                        <h3 class="plan-title">Hantavirus & Rare Viral</h3>
+                        <p class="plan-desc">Specialized coverage for rare viral diseases with emergency response.</p>
+                        <ul class="plan-features-mini">
+                            <li>✓ Emergency hospitalization</li>
+                            <li>✓ Specialist consultation</li>
+                            <li>✓ Experimental treatment</li>
+                        </ul>
+                        <div class="plan-price-row">
+                            <span class="price">$350</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="payment.html?plan=hantavirus" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CanadaInsu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

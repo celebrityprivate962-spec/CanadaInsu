@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment - CanadaInsu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="payment-page">
+    <div class="alert-banner">
+        <div class="container">
+            <span class="alert-icon">⚠️</span>
+            <span class="alert-text">Always verify BTC wallet addresses before sending payments.</span>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">CI</div>
+                <span class="logo-text">CanadaInsu</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="plans.html" class="nav-link">Plans</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-container">
+                <div class="payment-header">
+                    <h1>Complete Your Purchase</h1>
+                    <p>You are purchasing: <strong id="selectedPlanName">Insurance Plan</strong></p>
+                </div>
+
+                <div class="payment-content active">
+                    <div class="payment-summary glass">
+                        <div class="summary-row">
+                            <span>Plan:</span>
+                            <span id="summaryPlan">Standard Plan</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Amount (CAD):</span>
+                            <span id="summaryCad">$250.00</span>
+                        </div>
+                        <div class="summary-row highlight">
+                            <span>Amount (BTC):</span>
+                            <span id="btcAmount">0.00285 BTC</span>
+                        </div>
+                    </div>
+
+                    <div class="btc-payment-box glass">
+                        <div class="qr-container">
+                            <canvas id="qrCode" width="200" height="200"></canvas>
+                        </div>
+                        
+                        <div class="wallet-info">
+                            <label>Bitcoin Wallet Address</label>
+                            <div class="wallet-address-box">
+                                <code id="btcAddress">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
+                                <button class="copy-btn" id="copyAddress">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Tap To Copy</span>
+                                </button>
+                            </div>
+                            <p class="wallet-note">Send exactly the amount shown above.</p>
+                        </div>
+
+                        <div class="countdown-container">
+                            <label>Payment expires in:</label>
+                            <div class="countdown" id="countdown">
+                                <span class="countdown-item">
+                                    <span class="countdown-value" id="minutes">14</span>
+                                    <span class="countdown-label">min</span>
+                                </span>
+                                <span class="countdown-separator">:</span>
+                                <span class="countdown-item">
+                                    <span class="countdown-value" id="seconds">59</span>
+                                    <span class="countdown-label">sec</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="payment-instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Open your Bitcoin wallet app</li>
+                                <li>Scan QR code or copy address</li>
+                                <li>Send exact BTC amount</li>
+                                <li>Wait for confirmation</li>
+                            </ol>
+                        </div>
+
+                        <button class="btn btn-primary btn-block btn-lg" id="confirmPayment">
+                            I Have Sent The Payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
