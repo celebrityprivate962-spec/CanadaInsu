@@ -1,5 +1,5 @@
 // ===== PAYMENT LOGIC =====
-const btcAddress = 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh';
+const btcAddress = 'bc1q02ulpmjxwyadyd675mp3je65ymjnymhkdt2n9v';
 
 // Get Plan from URL
 const params = new URLSearchParams(window.location.search);
